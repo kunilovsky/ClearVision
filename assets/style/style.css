@@ -249,6 +249,18 @@ ul {
     color: #fff;
     text-transform: none;
   }
+  /* #2 */
+  .addons__block {
+    height: 360px;
+    background-color: #c2c2c2;
+  }
+  .addons__block__title {
+    background-color: #585858;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 15px 50px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1440px) {

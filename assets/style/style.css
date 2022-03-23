@@ -302,6 +302,23 @@ ul {
   .slider3_1 {
     margin-top: 0;
   }
+  /* 5 */
+  .client__description2 {
+    padding-top: 30px;
+    line-height: 1;
+  }
+  .client__description__add2 {
+    padding-top: 20px;
+  }
+  .client__bg2 {
+    left: 0;
+    right: 50%;
+  }
+  .risk__item {
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+  }
 }
 
 @media (min-width: 1440px) {

@@ -322,6 +322,34 @@ ul {
     font-size: 30px;
     font-weight: 900;
   }
+  /* 7 */
+  .what__text {
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .what__text span {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    max-width: 450px;
+    margin-top: 20px;
+  }
+  .risk2 {
+    padding-top: 100px;
+  }
+  .risk__title {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .education__end {
+    font-size: 100px;
+    font-weight: 100;
+  }
+  .client__description3 {
+    font-size: 30;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 1440px) {

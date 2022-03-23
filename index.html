@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/guide.css" />
+    <link rel="stylesheet" href="assets/style/owl.carousel.min.css">
     <title>Document</title>
 </head>
 
@@ -215,10 +216,22 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="conteiner">
-                <div class="row">
-
+        <section class="slider3">
+            <div class="container">
+                <div class="row slider3__title text-center w-100 justify-content-center">
+                    SOMETIMES IT'S GOOD TO BE <br> A FOLLOWER
+                </div>
+                <div class="row mt-5">
+                    <div class="owl-carousel">
+                        <div> <img class="owl__img" src="https://cdn.pixabay.com/photo/2022/01/17/19/59/dog-6945696__340.jpg" alt="">
+                        </div>
+                        <div> <img class="owl__img" src="https://cdn.pixabay.com/photo/2022/01/17/19/59/dog-6945696__340.jpg" alt="">
+                        </div>
+                        <div> <img class="owl__img" src="https://cdn.pixabay.com/photo/2022/01/17/19/59/dog-6945696__340.jpg" alt="">
+                        </div>
+                        <div> <img class="owl__img" src="https://cdn.pixabay.com/photo/2022/01/17/19/59/dog-6945696__340.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -327,7 +340,7 @@
                         2022 © ClearVision: All rights are reserved
                     </div>
                     <div class="col-lg-6">
-                        Disclaimer: lorem ipsum 
+                        Disclaimer: lorem ipsum
                     </div>
                 </div>
             </div>
@@ -336,6 +349,9 @@
     <!-- Script -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
@@ -346,6 +362,31 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                responsiveClass: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
         });
     </script>
     <!-- /Script -->

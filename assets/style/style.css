@@ -196,6 +196,17 @@ ul {
     height: 10px !important;
     color: #fff !important;
   }
+  .slider3 {
+    margin-top: 400px;
+  }
+  .slider3__title {
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+  }
+  .owl__img {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1440px) {

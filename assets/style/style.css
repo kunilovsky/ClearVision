@@ -261,6 +261,47 @@ ul {
     padding: 15px 50px;
     text-align: center;
   }
+  /* OurVision Page */
+  .our__title {
+    font-weight: 700;
+    font-size: 110px;
+    top: 30%;
+    left: 30%;
+    right: auto;
+    color: #fff;
+  }
+  .our__title span {
+    font-weight: 200;
+  }
+  .our__about {
+    color: #fff;
+    max-width: 350px;
+  }
+  .video__double {
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  .video__player2 {
+    top: 25%;
+  }
+  .mission {
+    color: #fff;
+    margin-top: 100px;
+  }
+  .mission__title {
+    font-weight: 700;
+    font-size: 100px;
+    padding-left: 12px;
+  }
+  .mission__description {
+    padding-left: 12px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+  .slider3_1 {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1440px) {

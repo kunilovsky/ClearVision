@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/guide.css" />
     <title>Document</title>
 </head>
 
@@ -78,6 +80,83 @@
                 </p>
             </div>
         </section>
+        <section class="video position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="video__content__text1 text-start">
+                            OUR vision
+                        </p>
+                        <a href="#" class="video__content__link text-uppercase">take a closer look &nbsp; > </a>
+                    </div>
+                </div>
+            </div>
+            <div class="video__player position-absolute">
+                <iframe width="1040" height="530" src="https://www.youtube.com/embed/ly6V7AMxxQE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="slider">
+            <p class="text-uppercase slider__title">
+                Get to <span>Know Us</span> 
+            </p>
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide swiper-slide__1">
+                        <div class="slider__img"
+                            style="background: no-repeat center/100% url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg);">
+                        </div>
+                        <div class="slider__description text-uppercase">
+                            <p>
+                                scott r. Emery <br>
+                                <span>Lead Sales and Marketing Manager </span>
+                            </p>
+                            <a href="#">Read more &nbsp; ></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__img"
+                            style="background: no-repeat center/100% url(https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107__480.jpg);">
+                        </div>
+                        <div class="slider__description text-uppercase">
+                            <p>
+                                scott r. Emery <br>
+                                <span>Lead Sales and Marketing Manager </span>
+                            </p>
+                            <a href="#">Read more &nbsp; ></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__img"
+                            style="background: no-repeat center/100% url(https://cdn.pixabay.com/photo/2016/07/19/04/40/moon-1527501__480.jpg);">
+                        </div>
+                        <div class="slider__description text-uppercase">
+                            <p>
+                                scott r. Emery <br>
+                                <span>Lead Sales and Marketing Manager </span>
+                            </p>
+                            <a href="#">Read more &nbsp; ></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__img"
+                            style="background: no-repeat center/100% url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252__480.jpg);">
+                        </div>
+                        <div class="slider__description text-uppercase">
+                            <p>
+                                scott r. Emery <br>
+                                <span>Lead Sales and Marketing Manager </span>
+                            </p>
+                            <a href="#">Read more &nbsp; ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- /Main -->
 
@@ -86,6 +165,19 @@
     <!-- /Section -->
     <!-- Script -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
     <!-- /Script -->
 </body>
 

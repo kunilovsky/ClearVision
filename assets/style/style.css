@@ -61,5 +61,74 @@ body {
     font-size: 180px;
     font-weight: 800;
   }
+  .video {
+    padding-top: 600px;
+  }
+  .video__content__text1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .video__content__link {
+    text-decoration: none;
+    color: #fff;
+  }
+  .video__content__link:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  .video__player {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    z-index: -1;
+  }
+  .wiper-slide {
+    margin-left: -160px;
+  }
+  .swiper-slide {
+    margin: 15px;
+    width: 660px !important;
+    height: 435px !important;
+  }
+  .slider {
+    padding-top: 500px;
+  }
+  .slider__title {
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: -150px;
+    z-index: 9999;
+    position: absolute;
+    left: 25%;
+  }
+  .slider__title span {
+    opacity: .5;
+  }
+  .slider__img {
+    width: 660px;
+    height: 435px;
+  }
+  .slider__description p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .slider__description span {
+    color: #A7A7A7;
+    font-size: 18px;
+  }
+  .slider__description a {
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .slider__description a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 /*# sourceMappingURL=style.css.map */

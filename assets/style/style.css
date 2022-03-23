@@ -213,8 +213,6 @@ ul {
   }
   .client__bg {
     height: 500px;
-    max-width: 1040px;
-    left: 40%;
     right: 0;
     top: 100px;
     z-index: -1;
@@ -318,6 +316,11 @@ ul {
     font-weight: 300;
     font-size: 18px;
     color: #fff;
+  }
+  /* 6 */
+  .contact__us {
+    font-size: 30px;
+    font-weight: 900;
   }
 }
 

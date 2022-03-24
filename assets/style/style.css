@@ -242,6 +242,8 @@ ul {
   }
   .slider2__description {
     padding-left: 200px;
+    font-family: 'FuturaBT-Light';
+    max-width: 565px;
   }
   .carousel {
     z-index: -1;
@@ -1066,12 +1068,33 @@ ul {
   .social.is-inline ul li:last-child{
     margin-right: 0;
   }
+
+  .blg .video-blog__title{
+    font-family: 'FuturaBT-Light';
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
 /*# sourceMappingURL=style.css.map */
 
 
 @media (min-width: 1361px){
   .swiper-slide {
     width: 660px !important;
+  }
+
+  .video.is-revert .row{
+    flex-direction: row-reverse;
+  }
+
+  .video.is-revert .client__description__add{
+    margin-left: auto;
+  }
+
+  .video.is-revert  .client__bg{
+    background-position: left !important;
   }
 }
 
@@ -1095,6 +1118,10 @@ ul {
 
   .contacts-section__inner{
     padding: 30px;
+  }
+
+  .client__description{
+    font-size: 80px;
   }
 }
 
@@ -1210,6 +1237,16 @@ ul {
   .copyright{
     padding-bottom: 25px;
   }
+
+  .slider2__title{
+    /* text-align: right; */
+    font-size: 60px;
+  }
+
+  .slider2__description{
+    padding-left: 0;
+  }
+  
 }
 
 @media (max-width: 992px){
@@ -1343,6 +1380,14 @@ ul {
 
   .footer__list-item{
     margin-bottom: 20px;
+  }
+
+  .blg{
+    padding-top: 0;
+  }
+
+  .blg iframe{
+    height: 335px;
   }
 }
 

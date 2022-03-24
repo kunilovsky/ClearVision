@@ -151,7 +151,7 @@ ul {
     font-weight: 900;
     color: #fff;
     margin-bottom: -150px;
-    z-index: 9999;
+    z-index: 9;
     position: absolute;
     left: 0;
     right: 0;
@@ -198,7 +198,7 @@ ul {
     font-size: 20px;
     line-height: 120%;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -214,7 +214,7 @@ ul {
   }
   .slider__description a:hover {
     text-decoration: none;
-    color: #CFAD7D;
+    color: #CFAD7D !important;
     transition: 0.3s;
   }
   .slider__description a:hover::after{
@@ -1134,8 +1134,86 @@ ul {
     padding-top: 300px;
   }
 
-  .video.is-homepage {
-    /* margin-top: 300px; */
+  .modal-dialog{
+    max-width: 100%;
+  }
+
+  .member-modal{
+    display: flex;
+    position: relative;
+
+    width: 1160px;
+    margin: 0 auto;
+
+    padding: 80px 100px 150px 100px;
+
+    z-index: 1;
+  }
+
+  .modal__close{
+    position: absolute;
+    right: 65px;
+    top: 60px;
+    background: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'FuturaBT-Light';
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #CFAD7D;
+    z-index: 95;
+    cursor: pointer;
+  }
+
+  .member-modal__main{
+    flex-shrink: 0;
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .member-modal__name{
+    font-family: 'FuturaBT-Light';
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .member-modal__position{
+    font-family: 'FuturaBT-Light';
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #B9B7B7;
+    margin-top: 5px;
+  }
+
+  .member-modal__contacts{
+    margin-top: 45px;
+  }
+
+  .member-modal__text{
+    margin-top: 40px;
+
+    font-family: 'FuturaBT-Light';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  .member-modal .contacts-list__link{
+    color: #fff;
+    font-weight: 400;
+    font-family: 'FuturaBT-Light';
+  }
+
+  .member-modal__user{
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    z-index: -1;
   }
 /*# sourceMappingURL=style.css.map */
 

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="preload" href="assets/fonts/Futura/Futura.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/guide.css" />
@@ -46,18 +47,18 @@
             <div class="social">
                 <ul>
                     <li class="social__item">
-                        <a href="#"><img class="social__icon" src="assets/img/inst.svg" alt=""></a>
+                        <a href="#"><img class="social__icon" src="assets/img/inst-gold.svg" alt=""></a>
                     </li>
                     <li class="social__item">
-                        <a href="#"><img class="social__icon" src="assets/img/meta.svg" alt=""></a>
+                        <a href="#"><img class="social__icon" src="assets/img/meta-gold.svg" alt=""></a>
                     </li>
                     <li class="social__item">
-                        <a href="#"><img class="social__icon" src="assets/img/link.svg" alt=""></a>
+                        <a href="#"><img class="social__icon" src="assets/img/le-gold.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
             <div class="scroll">
-                <a href="#target"><img src="assets/img/arrows.svg" alt=""></a>
+                <a href="#target"><img src="assets/img/arrow-gold.svg" alt=""></a>
             </div>
         </div>
     </header>
@@ -68,12 +69,15 @@
         <section class="our__title text-uppercase position-absolute">
             <span>Let's</span> connect
         </section>
-        <section class="video video__double position-relative" id="target">
+        <section class="video video__double video--margin contacts-video position-relative" id="target">
             <div class="container ">
                 <div class="row">
-                    <div class="col-lg-6 ms-5">
-                        <div class="client__description client__description2">
+                    <div class="col-lg-7 ms-5">
+                        <div class="client__description client__description2 text-accent">
                             Contact us
+                        </div>
+                        <div class="client__bg is-mobile"
+                            style="background: no-repeat right/60% url(https://cdn.pixabay.com/photo/2022/02/25/17/47/trees-7034574__340.jpg);">
                         </div>
                         <div class="contact__us">
                             “Greatest compliment we can receive is referring our services.”

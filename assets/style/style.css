@@ -67,11 +67,12 @@ ul {
     width: 100%;
   }
   .menu__btn {
-    padding-left: 20px;
+    padding-left: 32px;
     margin-top: 120px;
   }
   .navbar-toggler {
     border: none;
+    padding: 0;
   }
   .social ul {
     list-style: none;
@@ -1230,12 +1231,17 @@ ul {
   .nav-menu{
     position: absolute;
     left: 100%;
-    top: 0;
-    height: 100%;
+    height: 00%;
     width: 285px;
     padding: 30px 15px;
     background: #141301;
     z-index: 9;
+    transition: 0.4s;
+  }
+
+  .nav-menu.animate{
+    height: 100%;
+    transition: 0.4s;
   }
 
   .nav-menu__logo{
@@ -1295,6 +1301,7 @@ ul {
 
     margin-left: 20px;
     margin-top: 80px;
+    white-space: nowrap;
   }
 
   .nav-menu__login:hover{
@@ -1351,6 +1358,62 @@ ul {
     max-width: 1920px;
     margin: 0 auto;
   }
+
+   
+.hamburger-menu {
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: 30px;
+  height: 3px;
+}
+
+.bar {
+  position: relative;
+  transform: translateY(10px);
+  background: #CFAD7D;
+  transition: all 0ms 300ms;
+}
+.bar.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: #CFAD7D;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #CFAD7D;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
   
 /*# sourceMappingURL=style.css.map */
 @media (min-width: 1600px){
@@ -1826,6 +1889,10 @@ ul {
 
   .nav-menu__link, .nav-menu__login{
     font-size: 18px;
+  }
+
+  .nav-menu.animate{
+    height: auto;
   }
 }
 

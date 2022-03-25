@@ -1346,9 +1346,19 @@ ul {
     box-shadow: none !important;
     outline: 0 !important;
   }
+
+  main{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
   
 /*# sourceMappingURL=style.css.map */
-
+@media (min-width: 1600px){
+  .contacts-section__inner{
+    max-width: 800px;
+    margin: 0 0 0 auto;
+  }
+}
 
 @media (min-width: 1361px){
   .swiper-slide {
@@ -1376,6 +1386,8 @@ ul {
   .video.is-client .link-more::before{
     display: none;
   }
+
+  
 }
 
 @media (min-width: 1200px){
